@@ -18,5 +18,5 @@ document.getElementById('mySubmit').onclick = function () {
     radius=Number(radius);
     circumference = 2 * PI * radius;
     document.getElementById('myH1').textContent ='The Circumference is: '+circumference + ' cm';
-    console.log(circumference);
+    
 }
