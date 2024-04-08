@@ -1,22 +1,22 @@
 
-const textBox = document.getElementById("textBox");
-const toFahrenheit = document.getElementById("toFahrenheit");
-const toCelcius = document.getElementById("toCelcius");
-const result = document.getElementById("result");
+const _textBox = document.getElementById("textBox");
+const _toFahrenheit = document.getElementById("toFahrenheit");
+const _toCelcius = document.getElementById("toCelcius");
+const _result = document.getElementById("result");
 let temp;
 
 function convert() {
-    if (toFahrenheit.checked) {
-        temp = Number(textBox.value);
+    if (_toFahrenheit.checked) {
+        temp = Number(_textBox.value);
         temp = temp * 9 / 5 + 32;
-        result.textContent = temp.toFixed(2) + "F";
+        _result.textContent = temp.toFixed(2) + "F";
     }
-    else if (toCelcius.checked) {
-        temp = Number(textBox.value);
+    else if (_toCelcius.checked) {
+        temp = Number(_textBox.value);
         temp = (temp - 32) + (5 / 9);
-        result.textContent = temp.toFixed(2) + "C";
+        _result.textContent = temp.toFixed(2) + "C";
     }
     else {
-        result.textContent = "Select Unit";
+        _result.textContent = "Select  Unit";
     }
 }
